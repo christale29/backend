@@ -19,7 +19,7 @@ app.use("/",(req,res)=>res.status(200).json({
 ));
 const dbUrl=process.env.DATABASEURL;
 
-mongoose.connect(dbUrl).then(()=> console.log("Database connected succesful"));
+mongoose.connect(dbUrl).then(()=> console.log("Database connected "));
 const port=process.env.PORT;
 
 app.listen(port,()=>{
